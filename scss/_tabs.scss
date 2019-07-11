@@ -1,0 +1,33 @@
+#tabs {
+  background-color: $medium-dark-color;
+  color: $medium-color;
+  text-align: center;
+  font-size: 1.5rem;
+  border-bottom: $medium-color 2px solid;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    i {
+      margin-bottom: 1rem;
+    }
+    .selected {
+      border-bottom: 3px solid $primary-color;
+    }
+    .tab {
+      padding: 1.5rem 0;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+    #tabs {
+      .container {
+        p {
+          display: none;
+          border: none;
+        }
+      }
+    }
+}

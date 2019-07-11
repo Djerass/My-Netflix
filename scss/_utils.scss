@@ -1,0 +1,19 @@
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  text-align: center;
+  &-main {
+    background-color: $primary-color;
+    color: $light-color;
+
+  }
+  &-login {
+    border-radius: 5px;
+  }
+}

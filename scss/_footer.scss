@@ -1,0 +1,24 @@
+#main-footer {
+  background-color: $dark-color;
+  color: $medium-color;
+  a {
+    color: $medium-color;
+  }
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    ul,li {
+      margin-top: 1rem;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  #main-footer {
+    .footer-content {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
+    }
+  }
+}
